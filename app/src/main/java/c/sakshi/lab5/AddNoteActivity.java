@@ -54,7 +54,7 @@ public class AddNoteActivity extends AppCompatActivity {
         }
         else {
             title = "NOTE_" + (noteid + 1);
-            dbHelper.updateNote(title, date, content);
+            dbHelper.updateNote(title, date, content, userName);
         }
 
         Intent intent = new Intent(this, DisplayNotesActivity.class);
